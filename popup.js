@@ -1,18 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-	var checkPageButton = document.getElementById('checkPage');
-	
-	checkPageButton.addEventListener('click', function() {
-
 	    chrome.tabs.getSelected(null, function(tab) {
 	        tabUrl = tab.url;
 	        if( isWikipediaDesktop(tabUrl) ){
-	        	document.location.href = addMToUrl(tabUrl);
-	        	tab.url = addMToUrl(tabUrl);
+	        	var toMobile = addMToUrl(tabUrl)
+	        	chrome.tabs.update({url: toMobile});
 	        }
     	});
 
-	}, false);
 
 }, false);
 
