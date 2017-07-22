@@ -1,16 +1,19 @@
 {
   "manifest_version": 2,
-
-  "name": "Wiki2mob",
-  "description": "This extension will switch to a the mobile site of wikipedia",
+  "name": "Wiki2Mobile",
   "version": "1.0",
+  "description": "This extension will switch to a the mobile site of wikipedia",
+  
+   "icons": {"48": "icon.png"},
 
   "browser_action": {
-   "default_icon": "icon.png",
-   "default_popup": "popup.html"
+   "default_icon": "icon.png"
   },
-  
-  "permissions": [
-   "activeTab"
-   ]
+
+  "background": {
+    "persistent": false,
+    "scripts": ["popup.js"]
+  },
+
+  "permissions": ["activeTab", "tabs", "https://*.wikipedia.org/"]
 }
