@@ -12,7 +12,7 @@
 
   "background": {
     "persistent": false,
-    "scripts": ["popup.js"]
+    "scripts": ["popup.min.js"]
   },
 
   "permissions": ["activeTab", "tabs", "https://*.wikipedia.org/"]
