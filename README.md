@@ -1,0 +1,1 @@
+This Chrome extension will switch automatically to a the mobile site of wikipedia
