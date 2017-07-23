@@ -1,5 +1,5 @@
 # wikipediaToMobile
-This Chrome extension will switch automatically to a the mobile site of wikipedia
+This Chrome extension will switch automatically to the mobile site of wikipedia
 
 ### To install:
 	1. Download the repo as a zip, unzip it.
