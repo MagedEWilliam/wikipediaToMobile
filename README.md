@@ -1,5 +1,5 @@
 # wikipediaToMobile
-This Chrome extension will switch automatically to the mobile site of wikipedia
+This Chrome extension detects if you are using wikipedia the desktop version then switch automatically to the mobile site of wikipedia with the same page you were on.
 
 ### To install:
 	1. Visit chrome://extensions (via omnibox or menu -> Tools -> Extensions).
