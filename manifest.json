@@ -15,5 +15,11 @@
     "scripts": ["script.js"]
   },
 
-  "permissions": ["tabs", "https://*.wikipedia.org/"]
+   "content_scripts": [
+   {
+     "matches": ["http://*.wikipedia.org/*"],
+     "js": ["contentScript.js"]
+   }],
+
+  "permissions": ["tabs", "https://*.wikipedia.org/", "activeTab"]
 }

@@ -1,7 +1,7 @@
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-	if( tab.url.indexOf('wikipedia.org') == 11 ){
-		chrome.tabs.getSelected(null, function(tab) {
-			chrome.tabs.update({url: tab.url.replace('wikipedia.org', 'm.wikipedia.org') });
+chrome.tabs.onUpdated.addListener( (tabId, changeInfo, tab) => {
+	if(changeInfo.status === 'complete' && tab.url.includes('wikipedia.org')){
+		chrome.tabs.executeScript({
+			file: 'contentScript.js'
 		});
 	}
 });
