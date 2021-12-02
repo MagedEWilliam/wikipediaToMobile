@@ -1,10 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Wikipedia2Mobile",
-  "version": "2.4",
+  "version": "2.5",
   "description": "This extension will switch automatically to a the mobile site of wikipedia",
   
-   "icons": {"48": "icon.png"},
+   "icons": {
+    "48": "icon.png",
+    "128": "icon-128.png"
+  },
 
   "browser_action": {
    "default_icon": "icon.png"
